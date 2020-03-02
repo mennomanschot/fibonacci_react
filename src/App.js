@@ -86,8 +86,8 @@ RowCellsIncrement = (index) => {
   }
 
   this.setState({ cells: cellArray }) 
-  console.log('here are the row cell ids');
-  console.log(rowIndexArray);                     // expected output: [0 to 49] or [50 to 99] etc.
+  // console.log('here are the row cell ids');
+  // console.log(rowIndexArray);                     // expected output: [0 to 49] or [50 to 99] etc.
 }
 
   
@@ -118,8 +118,8 @@ ColCellsIncrement = (index) => {
     cellArray[col] = cell;                
   }
   this.setState({ cells: cellArray });
-  console.log('and here are the col cell ids');
-  console.log(colIndexArray);                      // expected output: [0 9 19...] or [51 61 71...] etc.
+  // console.log('and here are the col cell ids');
+  // console.log(colIndexArray);                      // expected output: [0 9 19...] or [51 61 71...] etc.
 }
 
   
@@ -200,8 +200,7 @@ ColCellsIncrement = (index) => {
             <div className="App-table">
               {table}
             </div>
-          </div>
-          
+          </div>         
         </div>        
      </Aux>
     );

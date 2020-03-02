@@ -25,8 +25,7 @@ class Cell extends Component {
       <div
         id={this.props.cellId}
         className={this.assignedClasses}
-        onClick={this.props.clicked.bind(this)}
-      >
+        onClick={this.props.clicked.bind(this)} >
         <p>{this.props.value}</p>
       </div>
     )
