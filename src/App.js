@@ -196,11 +196,12 @@ ColCellsIncrement = (index) => {
           <div>rumber of rows: {totalRows}</div>
           <div>rumber of columns: {totalCols}</div>
           <div>rumber of cells: {n}</div>
-          {/* <button
-          onClick={() => this.StylingHandler(this)} >reset styling</button> */}
-          <div className="App-table">
-            {table}
+          <div className="App-table-container">
+            <div className="App-table">
+              {table}
+            </div>
           </div>
+          
         </div>        
      </Aux>
     );

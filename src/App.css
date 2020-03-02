@@ -27,8 +27,16 @@
 .App-content {
   margin-top: 30px;
   text-align: center;
-  
 }
+
+.App-table-container {
+  margin-top: 30px;
+  display: inline-block;
+}
+
 .App-table {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(50, 0fr);
+  grid-auto-rows: auto;
+  grid-gap: 0;
 }

@@ -4,7 +4,7 @@
   border: solid 1px white;
   border-radius: 5px;
   background-color: lightseagreen;
-  margin-top: 5px;
+  margin: 1px;
   display: block;  
   text-align: center;
   font-size: 8px;
@@ -30,5 +30,9 @@
 }
 
 .reset {
-  background-color: rgb(64, 219, 142);
+  background-color: rgb(64, 219, 142) !important;
+}
+
+.incremented {
+  background-color: rgb(157, 219, 188);
 }

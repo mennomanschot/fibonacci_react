@@ -7,13 +7,17 @@ class Cell extends Component {
   render() {   
     if (this.props.changed) {
       this.cellClass.push(classes.changed);
-      this.styleUpdated = true;
     } 
     else if (this.props.reset) {
+      this.cellClass = [classes.cell];
       this.cellClass.push(classes.reset);
-      this.styleUpdated = true;
-    } else 
+    } 
+    else if (this.props.value > 0) {
+      this.cellClass.push(classes.incremented); 
+    }
+    else 
       this.cellClass = [classes.cell]
+    
     
     this.assignedClasses = this.cellClass.join(' ');
 
